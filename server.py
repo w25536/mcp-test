@@ -4,7 +4,7 @@ from fastmcp import FastMCP
 from typing import Optional
 
 
-mcp = FastMCP("hypermesh-tools")
+mcp = FastMCP("add-mcp-http")
 
 
 @mcp.tool
@@ -258,5 +258,4 @@ def view_side() -> dict:
     }
 
 if __name__ == "__main__":
-    #mcp.run(transport="http", host="0.0.0.0", port=8080)
-    mcp.run()
+    mcp.run(transport="http", host="0.0.0.0", port=8080)
